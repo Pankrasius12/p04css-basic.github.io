@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PANKRASIUS NGGALA</title>
+</head>
+<body>
+  <div class="conteiner">
+  <form>
+    <div class="name">
+    <label for="user" class="labelatas" >Nama :</label><br>
+    <input type="text" id="user" placeholder="Nama"/>
+    </div>
+    <br>
+    <div class="email">
+    <label for="email" class="labelatas">Alamat :<br></label>
+    <input type="email" id="email" placeholder="Alamat"/>
+    </div>
+    <br>
+    <div class="email">
+    <label for="email" class="labelatas">TTL :<br></label>
+    <input type="date" id="email" placeholder="Alamat"/>
+    </div>
+    <br>
+    <div class="email">
+    <label for="pw" class="labelatas">Email :<br></label>
+    <input type="email" id="pw" placeholder="email"/>
+    </div>
+    <br>
+    <div class="password">
+    <label for="pw" class="labelatas">Password:<br></label>
+    <input type="password" id="pw" placeholder="password"/>
+    </div>
+    <br>
+    <div class="adamhawa">
+    <label for="slect" class="gender">Jenis Kelamin :</label> <br>
+    <input type="radio" for="slect" name="kelamin" class="choice"><label id="slect">laki-laki</label>
+    <input type="radio" for="slect2" name="kelamin" class="choice2"><label id="slect" class="slect2">Perempuan</label>
+    </div>
+    <br>
+    <button onclick="pencet()" class="submit" id="button">Submit</button><br>
+  </form>
+  </div>
+  <script>
+    function pencet(){
+      let user = document.getElementById('user');
+      let email = document.getElementById('email');
+      let pw = document.getElementById('pw');
+      if(email.value){
+        alert('terimakasih bro')
+      }
+     /* if(user.value) && (email.value) {
+        alert('terimakasih')
+      }*/
+      if(pw.value == 0){
+        alert('antum belum ngisi form :)')
+      }
+    }
+    function darkMode() {
+      const dark = document.body
+      dark.classList.toggle('dark')
+    }
+  </script>
+</body>
+</html>
